@@ -177,17 +177,16 @@ const Home = () => {
               ))}
             </div>
           </div>
-
           
-          <div className="col-span-2 text-center">
-            <div className={`grid grid-cols-${numberOfGroups} gap-2 m-1`}>
+          <div className="flex text-center">
+            <div className={`grid grid-cols-10 gap-2 m-1 `}>
               {Array.from({ length: numberOfGroups }, (_, groupIndex) => (
-                <div key={groupIndex} className='text-xl h-8 w-24 '>{groupIndex + 1}</div>
+                <div key={groupIndex} className='text-xl h-8 w-24'>{groupIndex + 1}</div>
               ))}
             </div>
           </div>
 
-          <div className=' row-span-2 col-span-2'>
+          <div className='row-span-2 '>
             <div className="grid grid-rows-5 grid-flow-col gap-2 mx-1 justify-start">
               {dataList.map((item, index) => (
                 <div
